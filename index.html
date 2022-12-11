@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ionic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header grey">
+      <img src="images/1.png" alt="" class="logo" />
+    </header>
+
+    <main>
+      <section class="top-intro--section">
+        <div class="intro container">
+          <div class="row grey text--row">
+            <p class="text--name">SNOOPY-DEX / STRIP GENERATOR</p>
+            <p class="text--version">KME v1.3</p>
+          </div>
+          <div class="row button--row">
+            <button class="btn btn-generate grey">Generate All</button
+            ><button class="btn btn-reset grey">Reset All</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="svg--section">
+        <div class="container">
+          <svg class="firstSvg" width="1000" height="100">
+            <g>
+              <path
+                fill="none"
+                stroke="#eee"
+                stroke-width="2"
+                stroke-opacity="1"
+                d="M50, 0 L50, 50 L70, 50"
+              ></path>
+
+              <path
+                fill="none"
+                stroke="#eee"
+                stroke-width="2"
+                stroke-opacity="1"
+                d="M820, 0 L820 50, L840, 50"
+              ></path>
+            </g>
+
+            <g>
+              <circle
+                cx="50"
+                cy="50"
+                r="4"
+                fill="white"
+                stroke-width="2"
+                stroke="#eee"
+              ></circle>
+              <circle
+                class="ConnectorButton"
+                r="23"
+                cx="50"
+                cy="50"
+                fill="rgba(0,0,0,0.1)"
+                fill-opacity="0"
+              ></circle>
+            </g>
+            <g>
+              <rect
+                class="HoverRect"
+                rx="4"
+                ry="4"
+                x="70"
+                y="38"
+                fill="#eee"
+                width="106"
+                height="25"
+                data-type="first"
+                data-range="4"
+                data-lower="1"
+                data-upper="4"
+              ></rect>
+              <rect
+                class="FillRect"
+                rx="3"
+                ry="3"
+                x="72"
+                y="39.5"
+                fill="#c34567"
+                width="50"
+                height="21"
+                style="pointer-events: none"
+              ></rect>
+            </g>
+
+            <!-- SECOND SVG START -->
+            <g>
+              <circle
+                cx="820"
+                cy="50"
+                r="4"
+                fill="white"
+                stroke-width="2"
+                stroke="#eee"
+              ></circle>
+              <circle
+                class="ConnectorButton"
+                r="23"
+                cx="820"
+                cy="50"
+                fill="rgba(0,0,0,0.1)"
+                fill-opacity="0"
+              ></circle>
+            </g>
+            <g>
+              <rect
+                class="HoverRect"
+                rx="4"
+                ry="4"
+                x="840"
+                y="38"
+                fill="#eee"
+                width="106"
+                height="25"
+                data-type="second"
+                data-range="4"
+                data-lower="5"
+                data-upper="8"
+              ></rect>
+              <rect
+                class="FillRect"
+                rx="3"
+                ry="3"
+                x="842"
+                y="39.5"
+                fill="#c34567"
+                width="50"
+                height="21"
+                style="pointer-events: none"
+              ></rect>
+            </g>
+
+            <!-- TEXT ELEMENT -->
+            <g>
+              <text class="svg--text" x="115" y="57">2</text>
+              <text class="svg--text" x="885" y="57">5</text>
+            </g>
+
+            <!-- SECOND SVG END -->
+          </svg>
+        </div>
+      </section>
+
+      <section class="figures-and-descriptions">
+        <div class="container">
+          <div class="img-and-des">
+            <div class="images image--1">
+              <img src="images/2.png" alt="" class="img" />
+            </div>
+            <div class="descriptions">
+              <div class="description description--1">
+                <h1 class="description-header grey">Character 1</h1>
+                <div class="description--details">
+                  <div class="inner-detail">
+                    <p class="type">Type:</p>
+                    <p class="detail-type">Doy</p>
+                  </div>
+                  <div class="inner-detail">
+                    <p class="type">Birth Place:</p>
+                    <p class="detail-country">USA</p>
+                  </div>
+                  <div class="inner-detail">
+                    <p class="type">BirthDay:</p>
+                    <p class="detail-dob">12 April, 2011</p>
+                  </div>
+                  <div class="inner-detail">
+                    <p class="type">Occupation</p>
+                    <p class="detial-status">Unemployeed</p>
+                  </div>
+                </div>
+              </div>
+              <div class="description description--2">
+                <h1 class="description-header grey">Character 2</h1>
+                <div class="description--details">
+                  <div class="inner-detail">
+                    <p class="type">Type:</p>
+                    <p class="detail-type">Doy</p>
+                  </div>
+                  <div class="inner-detail">
+                    <p class="type">Birth Place:</p>
+                    <p class="detail-country">USA</p>
+                  </div>
+                  <div class="inner-detail">
+                    <p class="type">BirthDay:</p>
+                    <p class="detail-dob">12 April, 2011</p>
+                  </div>
+                  <div class="inner-detail">
+                    <p class="type">Occupation</p>
+                    <p class="detial-status">Unemployeed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="images image--2">
+              <img src="images/5.png" alt="" class="img" />
+            </div>
+
+            <!-- ABSOLUTE SVG
+            <svg class="secondSVG" width="1000" height="300">
+              <path
+                fill="none"
+                stroke="#ccc"
+                stroke-width="2"
+                stroke-opacity="1"
+                d="M490, 75 L511, 75"
+              ></path>
+              <path
+                fill="none"
+                stroke="#ccc"
+                stroke-width="2"
+                stroke-opacity="1"
+                d="M500, 75 L500, 285"
+              ></path>
+            </svg> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="last-section">
+        <div class="container">
+          <div class="images-outer-container">
+            <div class="temp">
+              <img
+                src="images/down1.png"
+                alt=""
+                class="last-image"
+                data-range="6"
+              />
+            </div>
+            <ion-icon
+              name="chevron-back-outline"
+              class="icon icon--left"
+            ></ion-icon>
+            <ion-icon
+              name="chevron-forward-outline"
+              class="icon icon--right"
+            ></ion-icon>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>TM & &copy; SNOOPY, llc. All right reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
